@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Here's how to play</h3>
+		</br>
+		<ol>
+            <h2>You will be given a random number at the start of the game.</h2>
+            <br>
+            <h2>There are four crystals below.</h2>
+            <br>
+            <h2>By clicking on a crystal, you will add a specific amount of points to your total score.</h2>
+            <br>
+            <h2>You win the game by matching your total score to the random number.</h2>
+            <br>
+            <h2>You lose the game if your total score goes above the random number.</h2>
+            <br>
+            <h2>The value of each crystal is hidden from you until you click on it.</h2>
+            <br>
+			<h2>Each time when the game starts, the game will change the values of each crystal.</h2>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+        
+	<h1><span id= "randomNumber"></span></h1>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
+	</div>
+	<div class="userTotal">
+		<h1>Your total score is:
+			<span id="finalTotal"></span>
+		</h1>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
+
+
